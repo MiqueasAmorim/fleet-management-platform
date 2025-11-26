@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: fleet-management-backend
+    environment:
+      NODE_ENV: production
+      PORT: ${PORT:-3000}
+    ports:
+      - "${PORT:-3000}:3000"
+    networks:
+      - fleet-management-network
+    restart: unless-stopped
+
+networks:
+  fleet-management-network:
+    driver: bridge
+
