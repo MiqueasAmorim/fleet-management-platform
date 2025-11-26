@@ -75,7 +75,7 @@ src/modules/vehicles/
 1. Clone o repositório:
 ```bash
 git clone <url-do-repositorio>
-cd fleet-management-platform/backend
+cd fleet-management-platform
 ```
 
 2. Instale as dependências:
@@ -338,15 +338,5 @@ A aplicação suporta as seguintes variáveis de ambiente:
 - `PORT`: Porta em que a aplicação será executada (padrão: 3000)
 - `NODE_ENV`: Ambiente de execução (development, production, etc.)
 
-## 📝 Licença
-
-Este projeto é privado e não licenciado.
-
-## 👥 Autor
-
-Desenvolvido como parte de um desafio técnico.
-
 ---
-
-**Nota**: Esta aplicação utiliza persistência em arquivo JSON (`data/vehicles.json`) para fins de demonstração. Em produção, recomenda-se a utilização de um banco de dados adequado (PostgreSQL, MongoDB, etc.).
 
